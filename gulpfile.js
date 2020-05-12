@@ -30,21 +30,21 @@ const config = {
       mainJs: "./src/js/app.js",
       vendor: "./src/js/vendor/**/*.js",
     },
-    dist: {
-      html: "./dist",
-      all: "./dist/**/*.*",
-      fonts: "./dist/fonts",
-      images: "./dist/images",
-      css: "./dist/css",
+    docs: {
+      html: "./docs",
+      all: "./docs/**/*.*",
+      fonts: "./docs/fonts",
+      images: "./docs/images",
+      css: "./docs/css",
       sourcemaps: "/maps",
-      js: "./dist/js",
-      vendor: "./dist/js/vendor",
+      js: "./docs/js",
+      vendor: "./docs/js/vendor",
     },
   },
 };
 
 function clean() {
-  return del([config.dir.dist.all]);
+  return del([config.dir.docs.all]);
 }
 
 function renderHTMLPages() {
@@ -61,24 +61,24 @@ function renderHTMLPages() {
             configpath: "@file",
           })
         )
-        .pipe(dest(config.dir.dist.html));
+        .pipe(dest(config.dir.docs.html));
     });
     resolve();
   });
 }
 
 function fonts() {
-  return src(config.dir.src.fonts).pipe(dest(config.dir.dist.fonts));
+  return src(config.dir.src.fonts).pipe(dest(config.dir.docs.fonts));
 }
 
 function images() {
-  return src(config.dir.src.images).pipe(dest(config.dir.dist.images));
+  return src(config.dir.src.images).pipe(dest(config.dir.docs.images));
 }
 
 function compileSass() {
   return src(config.dir.src.mainScss)
     .pipe(sass.sync().on("error", sass.logError))
-    .pipe(dest(config.dir.dist.css))
+    .pipe(dest(config.dir.docs.css))
     .pipe(browserSync.stream());
 }
 
@@ -86,31 +86,31 @@ function compileSassDev() {
   return src(config.dir.src.mainScss)
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on("error", sass.logError))
-    .pipe(sourcemaps.write(config.dir.dist.sourcemaps))
-    .pipe(dest(config.dir.dist.css))
+    .pipe(sourcemaps.write(config.dir.docs.sourcemaps))
+    .pipe(dest(config.dir.docs.css))
     .pipe(browserSync.stream());
 }
 
 function prefixCSS() {
   return (
-    src(config.dir.dist.css + "/*.css")
+    src(config.dir.docs.css + "/*.css")
       // .pipe(sourcemaps.init())
       .pipe(autoprefixer())
-      // .pipe(sourcemaps.write(config.dir.dist.sourcemaps + '/css'))
-      .pipe(dest(config.dir.dist.css))
+      // .pipe(sourcemaps.write(config.dir.docs.sourcemaps + '/css'))
+      .pipe(dest(config.dir.docs.css))
   );
 }
 
 function uglifyCSS() {
-  return src(config.dir.dist.css + "/*.css")
+  return src(config.dir.docs.css + "/*.css")
     .pipe(cleanCSS({ compatibility: "ie11" }))
-    .pipe(dest(config.dir.dist.css));
+    .pipe(dest(config.dir.docs.css));
 }
 
 function vendors() {
   return src(config.dir.src.vendor)
     .pipe(concat("vendors.js"))
-    .pipe(dest(config.dir.dist.vendor));
+    .pipe(dest(config.dir.docs.vendor));
 }
 
 function javascriptDev() {
@@ -118,7 +118,7 @@ function javascriptDev() {
     .transform("babelify", { presets: ["@babel/preset-env"] })
     .bundle()
     .pipe(source("app.js"))
-    .pipe(dest(config.dir.dist.js));
+    .pipe(dest(config.dir.docs.js));
 }
 
 function javascript() {
@@ -131,7 +131,7 @@ function javascript() {
       // .pipe(sourcemaps.init())
       .pipe(uglify())
       // .pipe(sourcemaps.write('./maps'))
-      .pipe(dest(config.dir.dist.js))
+      .pipe(dest(config.dir.docs.js))
   );
 }
 
@@ -139,7 +139,7 @@ function watchChanges() {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: config.dir.dist,
+      baseDir: config.dir.docs,
     },
   });
   watch(config.dir.src.scss).on("change", series(compileSass, reload));

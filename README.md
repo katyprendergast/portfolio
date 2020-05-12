@@ -20,7 +20,7 @@ Make sure you have [Node](https://nodejs.org/en/) installed and [gulp globally](
 
 Just `npm install` the dependencies and see the Gulpfile for configuration of the directories.
 Run `gulp dev` to start the system and watch the files for BrowserSync to reload the page.
-Use `gulp build` to make the final build ('dist' folder).
+Use `gulp build` to make the final build ('docs' folder).
 
 ---
 
@@ -39,7 +39,7 @@ To make use of the ES6 modules I used [Babel](https://babeljs.io/setup#installat
 
 #### JS + vendor
 
-Javascript from vendors can be placed in the 'src/js/vendor' folder. They wil be concatenated and placed in the 'dist/js/vendor' folder.
+Javascript from vendors can be placed in the 'src/js/vendor' folder. They wil be concatenated and placed in the 'docs/js/vendor' folder.
 
 #### BrowserSync & Watch
 
