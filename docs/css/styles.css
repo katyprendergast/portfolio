@@ -2466,10 +2466,10 @@ img {
 
 */
 .sans-serif {
-  font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
+  font-family: tt norms pro, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif; }
 
 .serif {
-  font-family: georgia, times, serif; }
+  font-family: Plantin MT Pro, georgia, times, serif; }
 
 .system-sans-serif {
   font-family: sans-serif; }
@@ -2479,18 +2479,19 @@ img {
 
 /* Monospaced Typefaces (for code) */
 /* From http://cssfontstack.com */
-code, .code {
+code,
+.code {
   font-family: Consolas, monaco, monospace; }
 
 .courier {
-  font-family: 'Courier Next', courier, monospace; }
+  font-family: "Courier Next", courier, monospace; }
 
 /* Sans-Serif Typefaces */
 .helvetica {
-  font-family: 'helvetica neue', helvetica, sans-serif; }
+  font-family: "helvetica neue", helvetica, sans-serif; }
 
 .avenir {
-  font-family: 'avenir next', avenir, sans-serif; }
+  font-family: "avenir next", avenir, sans-serif; }
 
 /* Serif Typefaces */
 .athelas {
@@ -6268,7 +6269,7 @@ code, .code {
   font-size: 2.25rem; }
 
 .f3 {
-  font-size: 1.5rem; }
+  font-size: 1.875rem; }
 
 .f4 {
   font-size: 1.25rem; }
@@ -6277,10 +6278,10 @@ code, .code {
   font-size: 1rem; }
 
 .f6 {
-  font-size: .875rem; }
+  font-size: 0.875rem; }
 
 .f7 {
-  font-size: .75rem; }
+  font-size: 0.75rem; }
 
 /* Small and hard to read for many people so use with extreme caution */
 @media (--breakpoint-not-small) {
@@ -6295,15 +6296,15 @@ code, .code {
   .f2-ns {
     font-size: 2.25rem; }
   .f3-ns {
-    font-size: 1.5rem; }
+    font-size: 1.875rem; }
   .f4-ns {
     font-size: 1.25rem; }
   .f5-ns {
     font-size: 1rem; }
   .f6-ns {
-    font-size: .875rem; }
+    font-size: 0.875rem; }
   .f7-ns {
-    font-size: .75rem; } }
+    font-size: 0.75rem; } }
 
 @media (--breakpoint-medium) {
   .f-6-m,
@@ -6317,15 +6318,15 @@ code, .code {
   .f2-m {
     font-size: 2.25rem; }
   .f3-m {
-    font-size: 1.5rem; }
+    font-size: 1.875rem; }
   .f4-m {
     font-size: 1.25rem; }
   .f5-m {
     font-size: 1rem; }
   .f6-m {
-    font-size: .875rem; }
+    font-size: 0.875rem; }
   .f7-m {
-    font-size: .75rem; } }
+    font-size: 0.75rem; } }
 
 @media (--breakpoint-large) {
   .f-6-l,
@@ -6339,15 +6340,15 @@ code, .code {
   .f2-l {
     font-size: 2.25rem; }
   .f3-l {
-    font-size: 1.5rem; }
+    font-size: 1.875rem; }
   .f4-l {
     font-size: 1.25rem; }
   .f5-l {
     font-size: 1rem; }
   .f6-l {
-    font-size: .875rem; }
+    font-size: 0.875rem; }
   .f7-l {
-    font-size: .75rem; } }
+    font-size: 0.75rem; } }
 
 /*
 
@@ -6912,14 +6913,14 @@ code, .code {
 */
 :root {
   --black: #000;
-  --near-black: #111;
-  --dark-gray: #333;
-  --mid-gray: #555;
-  --gray: #777;
-  --silver: #999;
-  --light-silver: #aaa;
-  --moon-gray: #ccc;
-  --light-gray: #eee;
+  --near-black: #00162e;
+  --dark-gray: #555a5f;
+  --mid-gray: #818181;
+  --gray: #d8d8d8;
+  --silver: #e6e6e7;
+  --light-silver: #f0f0f1;
+  --moon-gray: #f7f7f7;
+  --light-gray: #fdfdfd;
   --near-white: #f4f4f4;
   --white: #fff;
   --transparent: transparent;
@@ -7065,7 +7066,7 @@ html {
 img {
   max-width: 100%; }
 
-button {
+button.cta {
   padding: 9% 15%;
   font-family: tt norms pro;
   text-transform: uppercase;
@@ -7078,13 +7079,15 @@ button {
   background-size: center;
   background-repeat: no-repeat; }
 
-.containerx {
-  width: 100%;
-  height: 500px;
-  display: flex;
-  background-color: aqua;
-  flex-flow: row wrap;
-  justify-content: space-evenly; }
+.container {
+  max-width: 1152px; }
+
+.btn.btn--menu {
+  font-size: 1.4rem;
+  color: #00162e; }
+
+h1 {
+  letter-spacing: 0.04rem; }
 
 .quoteText {
   font-size: 14px;
@@ -7095,11 +7098,9 @@ p {
   font-family: tt norms pro;
   font-size: 14px;
   line-height: 18px;
-  color: #555a5f;
   font-weight: 400; }
 
 small {
-  color: #00162e;
   font-family: tt norms pro;
   line-height: 16px;
   font-size: 12px;
@@ -7109,6 +7110,16 @@ ol.number li span {
   display: inline;
   border: 1px solid black;
   border-radius: 50%;
-  padding: 9px 11px 5px 12px; }
+  padding: 10px 12px 7px 12px; }
+
+.browser {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; }
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block; }
 
 /*# sourceMappingURL=maps/styles.css.map */

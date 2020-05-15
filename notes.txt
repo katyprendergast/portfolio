@@ -1,3 +1,0 @@
-To run: gulp dev
-Animate: https://animate.style/
-Templates: https://www.npmjs.com/package/gulp-file-include

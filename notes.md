@@ -1,0 +1,28 @@
+To run: gulp dev
+Animate: https://animate.style/
+Templates: https://www.npmjs.com/package/gulp-file-include
+To build: gulp build
+
+To commit:
+
+git status
+
+you will see all changed files / new files in red
+
+to add all run git . 
+
+you can run git status again to see the added files in green, if you do not want to add them all you can 
+do git add "filepath" <-- you can copy it from the git status screen and paste it in  for each file
+
+then to commit do git commit -m 'type the message for the commit here'
+
+then git push origin
+
+git status = show the changes
+
+git add = git file/files the commit we are going to do
+
+git commit -m  = save the commit with some text describing what you have changed, good for restoring.
+
+git push origin master = push this commit from origin (this computer) to branch master, you only have master
+at the moment

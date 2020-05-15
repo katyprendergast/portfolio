@@ -23,7 +23,7 @@ const config = {
       html: "./src/pages/**/*.html",
       pages: "./src/pages/*.html",
       fonts: "./src/fonts/*",
-      images: "./src/images/*",
+      images: "./src/images/**/*",
       scss: "./src/scss/**/*.+(scss|css)",
       mainScss: "./src/scss/styles.scss",
       js: "./src/js/**/*.js",
