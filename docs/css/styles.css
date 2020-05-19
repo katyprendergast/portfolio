@@ -4496,9 +4496,9 @@ code,
 /* Variables */
 :root {
   --spacing-none: 0;
-  --spacing-extra-small: .25rem;
-  --spacing-small: .5rem;
-  --spacing-medium: 1rem;
+  --spacing-extra-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1.25rem;
   --spacing-large: 2rem;
   --spacing-extra-large: 4rem;
   --spacing-extra-extra-large: 8rem;
@@ -7102,8 +7102,8 @@ p {
 
 small {
   font-family: tt norms pro;
-  line-height: 16px;
-  font-size: 12px;
+  line-height: 18px;
+  font-size: 14px;
   font-weight: 400; }
 
 ol.number li span {
@@ -7113,12 +7113,12 @@ ol.number li span {
   padding: 10px 12px 7px 12px; }
 
 .browser {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px; }
 
 .dot {
-  height: 10px;
-  width: 10px;
+  height: 7px;
+  width: 7px;
   border-radius: 50%;
   display: inline-block; }
 

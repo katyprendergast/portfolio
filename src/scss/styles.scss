@@ -82,8 +82,8 @@ p {
 
 small {
   font-family: tt norms pro;
-  line-height: 16px;
-  font-size: 12px;
+  line-height: 18px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -99,13 +99,19 @@ ol.number {
 }
 
 .browser {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .dot {
-  height: 10px;
-  width: 10px;
+  height: 7px;
+  width: 7px;
   border-radius: 50%;
   display: inline-block;
 }
+
+// Custom Media Query Variables
+
+$breakpoint-not-small: "screen and (min-width: 30em)" !default;
+$breakpoint-medium: "screen and (min-width: 30em) and (max-width: 60em)" !default;
+$breakpoint-large: "screen and (min-width: 60em)" !default;
