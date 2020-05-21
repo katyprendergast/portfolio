@@ -1,20 +1,37 @@
 @import "reset/reset";
-@import "tachyons/tachyons";
+// @import "tachyons/tachyons";
 @import "partials/fonts";
 
 html {
   min-height: 100%;
 }
 
-body {
+.sans-serif {
+  font-family: tt norms pro, -apple-system, BlinkMacSystemFont, "avenir next",
+    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+
+.serif {
+  font-family: Plantin MT Pro, georgia, times, serif;
 }
 
 img {
   max-width: 100%;
 }
 
+.sans-serif {
+  font-family: tt norms pro, -apple-system, BlinkMacSystemFont, "avenir next",
+    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+
+.serif {
+  font-family: Plantin MT Pro, georgia, times, serif;
+}
+
 button.cta {
-  padding: 9% 15%;
+  // padding: 9% 15%;
   font-family: tt norms pro;
   text-transform: uppercase;
   font-weight: 400;
@@ -110,8 +127,174 @@ ol.number {
   display: inline-block;
 }
 
-// Custom Media Query Variables
+.black {
+  color: #000;
+}
 
-$breakpoint-not-small: "screen and (min-width: 30em)" !default;
-$breakpoint-medium: "screen and (min-width: 30em) and (max-width: 60em)" !default;
-$breakpoint-large: "screen and (min-width: 60em)" !default;
+.near-black {
+  color: #00162e;
+}
+
+.dark-gray {
+  color: #555a5f;
+}
+
+.mid-gray {
+  color: #818181;
+}
+
+.gray {
+  color: #d8d8d8;
+}
+
+.silver {
+  color: #e6e6e7;
+}
+
+.light-silver {
+  color: #f0f0f1;
+}
+
+.moon-gray {
+  color: #f7f7f7;
+}
+
+.light-gray {
+  color: #fdfdfd;
+}
+
+.near-white {
+  color: #f4f4f4;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-near-black {
+  background-color: #00162e;
+}
+
+.bg-dark-gray {
+  background-color: #555a5f;
+}
+
+.bg-mid-gray {
+  background-color: #818181;
+}
+
+.bg-gray {
+  background-color: #d8d8d8;
+}
+
+.bg-silver {
+  background-color: #e6e6e7;
+}
+
+.bg-light-silver {
+  background-color: #f0f0f1;
+}
+
+.bg-moon-gray {
+  background-color: #f7f7f7;
+}
+
+.bg-light-gray {
+  background-color: #f5f5f5;
+}
+
+.bg-near-white {
+  background-color: #fdfdfd;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.b--black {
+  border-color: #000;
+}
+
+.b--near-black {
+  border-color: #00162e;
+}
+
+.b--dark-gray {
+  border-color: #555a5f;
+}
+
+.b--mid-gray {
+  border-color: #818181;
+}
+
+.b--gray {
+  border-color: #d8d8d8;
+}
+
+.b--silver {
+  border-color: #e6e6e7;
+}
+
+.b--light-silver {
+  border-color: #f0f0f1;
+}
+
+.b--moon-gray {
+  border-color: #f7f7f7;
+}
+
+.b--light-gray {
+  border-color: #fdfdfd;
+}
+
+.b--near-white {
+  border-color: #f4f4f4;
+}
+
+.b--white {
+  border-color: #ffffff;
+}
+
+.pa3 {
+  padding: 1.25rem;
+}
+
+.pt3 {
+  padding-top: 1.25rem;
+}
+
+.pr3 {
+  padding-right: 1.25rem;
+}
+
+.pb3 {
+  padding-bottom: 1.25rem;
+}
+
+.pl3 {
+  padding-left: 1.25rem;
+}
+
+.ma3 {
+  margin: 1.25rem;
+}
+
+.mt3 {
+  margin-top: 1.25rem;
+}
+
+.mr3 {
+  margin-right: 1.25rem;
+}
+
+.mb3 {
+  margin-bottom: 1.25rem;
+}
+
+.ml3 {
+  margin-left: 1.25rem;
+}

@@ -24,7 +24,7 @@ const config = {
       pages: "./src/pages/*.html",
       fonts: "./src/fonts/*",
       images: "./src/images/**/*",
-      scss: "./src/scss/**/*.css",
+      scss: "./src/scss/**/*.+(css|scss)",
       mainScss: "./src/scss/styles.scss",
       js: "./src/js/**/*.js",
       mainJs: "./src/js/app.js",
