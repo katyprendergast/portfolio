@@ -16,6 +16,22 @@ html {
   font-family: Plantin MT Pro, georgia, times, serif;
 }
 
+.canela {
+  font-family: Canela, Plantin MT Pro, georgia, times, serif;
+}
+
+.ttnorms {
+  font-family: tt norms pro, -apple-system, BlinkMacSystemFont, "avenir next",
+    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+
+.interstate {
+  font-family: interstate, tt norms pro, -apple-system, BlinkMacSystemFont,
+    "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto,
+    "segoe ui", arial, sans-serif;
+}
+
 img {
   max-width: 100%;
 }
@@ -37,6 +53,16 @@ button.cta {
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button.disabled {
+  font-family: tt norms pro;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: auto;
 }
 
 .main-bg-image {
@@ -127,6 +153,28 @@ ol.number {
   display: inline-block;
 }
 
+.w-45 {
+  width: 45%;
+}
+
+@media screen and (min-width: 30em) {
+  .w-45-ns {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .w-45-m {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .w-45-l {
+    width: 45%;
+  }
+}
+
 .black {
   color: #000;
 }
@@ -156,15 +204,15 @@ ol.number {
 }
 
 .moon-gray {
-  color: #f7f7f7;
+  color: pink;
 }
 
 .light-gray {
-  color: #fdfdfd;
+  color: #f5f5f5;
 }
 
 .near-white {
-  color: #f4f4f4;
+  color: #fdfdfd;
 }
 
 .white {
@@ -200,7 +248,7 @@ ol.number {
 }
 
 .bg-moon-gray {
-  background-color: #f7f7f7;
+  background-color: pink;
 }
 
 .bg-light-gray {
@@ -244,15 +292,15 @@ ol.number {
 }
 
 .b--moon-gray {
-  border-color: #f7f7f7;
+  border-color: pink;
 }
 
 .b--light-gray {
-  border-color: #fdfdfd;
+  border-color: #f5f5f5;
 }
 
 .b--near-white {
-  border-color: #f4f4f4;
+  border-color: #fdfdfd;
 }
 
 .b--white {
@@ -297,4 +345,36 @@ ol.number {
 
 .ml3 {
   margin-left: 1.25rem;
+}
+
+// DBC Colour Palette
+
+.bg-darkest-green {
+  background-color: #0b4436;
+}
+
+.bg-light-mint {
+  background-color: #deede9;
+}
+
+.bg-mint-green {
+  background-color: #c5e6df;
+}
+
+.bg-tangerine {
+  background-color: #e07445;
+}
+
+// DCH Colour Palette
+
+.bg-darkest-blue {
+  background-color: #1e429b;
+}
+
+.bg-cyan {
+  background-color: #1bbcef;
+}
+
+.bg-light-blue {
+  background-color: #d9f3ff;
 }
