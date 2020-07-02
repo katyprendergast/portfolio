@@ -243,9 +243,8 @@ $(".menu__inner").removeClass("hidden");
 
   document.querySelector(".btn--menu").addEventListener("click", function () {
     revealer.reveal({
-      bgcolor: "#252525",
-      //bgcolor: '#e8e8e8',
-      //bgcolor: '#00e0ff',
+      bgcolor: "#e8e8e8",
+      //bgcolor: "#12E2CB",
       duration: 400,
       easing: "easeInOutCubic",
       onCover: function (contentEl, revealerEl) {
@@ -262,7 +261,7 @@ $(".menu__inner").removeClass("hidden");
     closeCtrl.removeEventListener("click", closeMenu);
     navEl.classList.remove("menu--open");
     revealer.reveal({
-      bgcolor: "#252525",
+      bgcolor: "#e8e8e8",
       duration: 400,
       easing: "easeInOutCubic",
       onCover: function (contentEl, revealerEl) {
