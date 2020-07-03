@@ -595,69 +595,71 @@ ol.number {
 
 // animations
 
-.cheese {
-  animation: hoveranimation 5s ease-in-out infinite;
-}
+// .cheese,
+// .paint,
+// .plant,
+// .doughnut,
+// .dragon,
+// .book {
+//   animation: hoveranimation 5s ease-in-out infinite;
+// }
 
-.ghost {
-  animation: hoveranimation2 6s ease infinite;
-  position: absolute;
-}
+// .ghost,
+// .sneaker,
+// .map {
+//   animation: hoveranimation2 6s ease infinite;
+// }
 
-.paint {
-  animation: hoveranimation 6s ease-in-out infinite;
-}
+// .parrot,
+// .tent,
+// .fantasy,
+// .camera {
+//   animation: hoveranimation3 4s ease-in-out infinite;
+// }
 
-.plant {
-  animation: hoveranimation 6s ease-in-out infinite;
-  position: absolute;
-  top: 500px;
-  left: 150px;
-}
+// .paint {
+//   animation: hoveranimation 6s ease-in-out infinite;
+// }
 
-.sneaker {
-  animation: hoveranimation2 4s ease-in-out infinite;
-  position: absolute;
-  top: 550px;
-  left: 650px;
-}
+// .plant {
+//   animation: hoveranimation 6s ease-in-out infinite;
+//   // position: absolute;
+//   // top: 500px;
+//   // left: 150px;
+// }
 
-.doughnut {
-  animation: hoveranimation 6s ease-in-out infinite;
-  position: absolute;
-  top: 380px;
-  right: 450px;
-}
+// .sneaker {
+//   animation: hoveranimation2 4s ease-in-out infinite;
+//   // position: absolute;
+//   // top: 550px;
+//   // left: 650px;
+// }
 
-.tent {
-  animation: hoveranimation6 6s ease-in-out infinite;
-  @keyframes hoveranimation6 {
-    0% {
-      transform: translate(5px, 50px);
-    }
-    50% {
-      transform: translate(5px, 60px);
-    }
-    100% {
-      transform: translate(5px, 50px);
-    }
-  }
-}
+// .doughnut {
+//   animation: hoveranimation 6s ease-in-out infinite;
+//   // position: absolute;
+//   // top: 380px;
+//   // right: 450px;
+// }
 
-.fantasy {
-  animation: hoveranimation 5s ease-in-out infinite;
-  position: absolute;
-  top: 400px;
-  right: 450px;
-}
+// .tent {
+//   animation: hoveranimation6 6s ease-in-out infinite;
+// }
 
-.dragon {
-  animation: hoveranimation 5s ease-in-out infinite;
-  position: absolute;
-  top: 450px;
-  right: 420px;
-  transform: rotate(90deg);
-}
+// .fantasy {
+//   animation: hoveranimation 5s ease-in-out infinite;
+//   position: absolute;
+//   top: 400px;
+//   right: 450px;
+// }
+
+// .dragon {
+//   animation: hoveranimation 5s ease-in-out infinite;
+//   position: absolute;
+//   top: 450px;
+//   right: 420px;
+//   transform: rotate(90deg);
+// }
 
 @keyframes hoveranimation {
   0% {
@@ -695,6 +697,18 @@ ol.number {
   }
   100% {
     transform: translate(120px, 63px);
+  }
+}
+
+@keyframes hoveranimation6 {
+  0% {
+    transform: translate(5px, 50px);
+  }
+  50% {
+    transform: translate(5px, 60px);
+  }
+  100% {
+    transform: translate(5px, 50px);
   }
 }
 
