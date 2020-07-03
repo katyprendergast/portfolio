@@ -7,13 +7,15 @@ html {
 }
 
 .sans-serif {
-  font-family: tt norms pro, -apple-system, BlinkMacSystemFont, "avenir next",
-    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+  font-family: tt norms pro, -apple-system, sans-serif, "avenir next", avenir,
+    "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
     sans-serif;
 }
 
 .serif {
-  font-family: Plantin MT Pro, georgia, times, serif;
+  font-family: plantin, Plantin MT Pro, georgia, times, serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .canela {
@@ -34,16 +36,6 @@ html {
 
 img {
   max-width: 100%;
-}
-
-.sans-serif {
-  font-family: tt norms pro, -apple-system, BlinkMacSystemFont, "avenir next",
-    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
-    sans-serif;
-}
-
-.serif {
-  font-family: Plantin MT Pro, georgia, times, serif;
 }
 
 a,
@@ -83,41 +75,11 @@ button.disabled {
   max-width: 1152px;
 }
 
-// h1,
-// h2,
-// h3,
-// h4 {
-//   font-family: Plantin MT Pro;
-//   font-weight: 200;
-//   color: #00162e;
-// }
-
 .btn.btn--menu,
 .btn.btn--close {
   font-size: 1.4rem;
   color: #00162e;
 }
-
-h1 {
-  letter-spacing: 0.04rem;
-}
-
-// h2 {
-//   font-size: 20px;
-//   line-height: 28px;
-//   letter-spacing: 0.02rem;
-// }
-
-// h3 {
-//   font-size: 16px;
-//   line-height: 20px;
-// }
-
-// h4 {
-//   font-size: 14px;
-//   line-height: 18px;
-//   text-transform: uppercase;
-// }
 
 .quoteText {
   font-size: 14px;
@@ -483,6 +445,7 @@ ol.number {
   // width: 100%;
   position: inherit !important;
   z-index: 100;
+  width: 0px;
 }
 
 // .home .menu {
@@ -547,7 +510,6 @@ ol.number {
 .menu__item {
   padding: 0.15em;
   text-align: center;
-  margin: 4% 0%;
 }
 
 .menu--open .menu__item,
