@@ -453,32 +453,35 @@ ol.number {
 }
 
 .btn--menu {
-  position: absolute;
-  top: 1vw;
-  right: 2vw;
+  // position: absolute;
+  // top: 1vw;
+  // right: 2vw;
   color: #252525;
-  padding: 15px 15px;
+  padding: 15px 0px;
   pointer-events: visible;
   z-index: 10;
 }
 
 .btn--close {
-  position: absolute;
-  top: 1vw;
-  right: 2vw;
-  padding: 15px;
+  // position: absolute;
+  // top: 1vw;
+  // right: 2vw;
+  position: relative;
+  padding: 15px 0px;
   font-size: 0.75em;
   z-index: 100;
+  right: 22px;
 }
 
 /* Menu */
 
 .menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  // height: 100%;
+  // width: 100%;
+  position: inherit !important;
   z-index: 100;
 }
 
@@ -692,5 +695,36 @@ ol.number {
   }
   100% {
     transform: translate(120px, 63px);
+  }
+}
+
+.wave {
+  animation: waveanimation 2s ease-out infinite;
+}
+
+@keyframes waveanimation {
+  0% {
+    transform: translate(190px, 20px);
+    transform: rotate(10deg);
+  }
+  10% {
+    transform: translate(495px, 32px);
+    transform: rotate(40deg);
+  }
+  20% {
+    transform: translate(190px, 20px);
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: translate(495px, 32px);
+    transform: rotate(40deg);
+  }
+  40% {
+    transform: translate(495px, 20px);
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: translate(495px, 20px);
+    transform: rotate(10deg);
   }
 }
