@@ -6,9 +6,17 @@ html {
   min-height: 100%;
 }
 
+@font-face {
+  font-family: "tt_norms_pro_regular";
+  src: url("./fonts/tt_norms_pro_regular-webfont.woff2") format("woff2"),
+    url("./fonts/tt_norms_pro_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .sans-serif {
-  font-family: tt norms pro, -apple-system, sans-serif, "avenir next", avenir,
-    "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+  font-family: "tt_norms_pro_regular", -apple-system, sans-serif, "avenir next",
+    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
     sans-serif;
 }
 
@@ -18,20 +26,10 @@ html {
   font-style: normal;
 }
 
-.canela {
-  font-family: Canela, Plantin MT Pro, georgia, times, serif;
-}
-
-.ttnorms {
-  font-family: tt norms pro, -apple-system, BlinkMacSystemFont, "avenir next",
-    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
-    sans-serif;
-}
-
 .interstate {
-  font-family: interstate, tt norms pro, -apple-system, BlinkMacSystemFont,
-    "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto,
-    "segoe ui", arial, sans-serif;
+  font-family: interstate, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 img {
