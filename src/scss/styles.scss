@@ -9,7 +9,8 @@ html {
 @font-face {
   font-family: "tt_norms_pro_regular";
   src: url("../fonts/tt_norms_pro_regular-webfont.woff2") format("woff2"),
-    url("../fonts/tt_norms_pro_regular-webfont.woff") format("woff");
+    url("../fonts/tt_norms_pro_regular-webfont.woff") format("woff"),
+    url("../fonts/tt_norms_pro_regular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -46,7 +47,6 @@ a:active {
 
 button.cta {
   // padding: 9% 15%;
-  font-family: tt norms pro;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 12px;
@@ -55,7 +55,6 @@ button.cta {
 }
 
 button.disabled {
-  font-family: tt norms pro;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 12px;
@@ -86,7 +85,6 @@ button.disabled {
 }
 
 p {
-  font-family: tt norms pro;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
