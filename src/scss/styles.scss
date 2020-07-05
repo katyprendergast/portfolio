@@ -1,5 +1,4 @@
 @import "reset/reset";
-// @import "tachyons/tachyons";
 @import "partials/fonts";
 
 html {
@@ -346,7 +345,7 @@ ol.number {
   background-color: #d9f3ff;
 }
 
-// WOW ALL THIS JUNK CSS
+// WOW
 
 /* Buttons */
 
@@ -434,19 +433,10 @@ ol.number {
 /* Menu */
 
 .menu {
-  // position: absolute;
-  // top: 0;
-  // right: 0;
-  // height: 100%;
-  // width: 100%;
   position: inherit !important;
   z-index: 100;
   width: 0px;
 }
-
-// .home .menu {
-//   position: fixed;
-// }
 
 .js .menu {
   pointer-events: none;
@@ -577,27 +567,6 @@ ol.number {
 .fantasy {
   animation: hoveranimation4 7s ease-in-out infinite;
 }
-
-// .plant {
-//   animation: hoveranimation 6s ease-in-out infinite;
-//   // position: absolute;
-//   // top: 500px;
-//   // left: 150px;
-// }
-
-// .sneaker {
-//   animation: hoveranimation2 4s ease-in-out infinite;
-//   // position: absolute;
-//   // top: 550px;
-//   // left: 650px;
-// }
-
-// .doughnut {
-//   animation: hoveranimation 6s ease-in-out infinite;
-//   // position: absolute;
-//   // top: 380px;
-//   // right: 450px;
-// }
 
 @keyframes hoveranimation {
   0% {
