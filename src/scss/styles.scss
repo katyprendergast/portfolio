@@ -557,31 +557,30 @@ ol.number {
 
 // animations
 
-// .cheese,
-// .paint,
-// .plant,
-// .doughnut,
-// .dragon,
-// .book {
-//   animation: hoveranimation 5s ease-in-out infinite;
-// }
+.paint,
+.cheese,
+.book {
+  animation: hoveranimation 5s ease-in-out infinite;
+}
 
-// .ghost,
-// .sneaker,
-// .map {
-//   animation: hoveranimation2 6s ease infinite;
-// }
+.ghost,
+.sneaker,
+.map {
+  animation: hoveranimation2 6s ease infinite;
+}
 
-// .parrot,
-// .tent,
-// .fantasy,
-// .camera {
-//   animation: hoveranimation3 4s ease-in-out infinite;
-// }
+.parrot,
+.tent,
+.camera {
+  animation: hoveranimation3 4s ease-in-out infinite;
+}
 
-// .paint {
-//   animation: hoveranimation 6s ease-in-out infinite;
-// }
+.plant,
+.doughnut,
+.dragon,
+.fantasy {
+  animation: hoveranimation4 7s ease-in-out infinite;
+}
 
 // .plant {
 //   animation: hoveranimation 6s ease-in-out infinite;
@@ -604,25 +603,6 @@ ol.number {
 //   // right: 450px;
 // }
 
-// .tent {
-//   animation: hoveranimation6 6s ease-in-out infinite;
-// }
-
-// .fantasy {
-//   animation: hoveranimation 5s ease-in-out infinite;
-//   position: absolute;
-//   top: 400px;
-//   right: 450px;
-// }
-
-// .dragon {
-//   animation: hoveranimation 5s ease-in-out infinite;
-//   position: absolute;
-//   top: 450px;
-//   right: 420px;
-//   transform: rotate(90deg);
-// }
-
 @keyframes hoveranimation {
   0% {
     transform: translate(1px, 5px);
@@ -637,40 +617,40 @@ ol.number {
 
 @keyframes hoveranimation2 {
   0% {
-    transform: translate(495px, 20px);
+    transform: translate(1px, 20px);
     transform: rotate(10deg);
   }
   50% {
-    transform: translate(495px, 28px);
+    transform: translate(1px, 28px);
     transform: rotate(20deg);
   }
   100% {
-    transform: translate(495px, 20px);
+    transform: translate(1px, 20px);
     transform: rotate(10deg);
   }
 }
 
 @keyframes hoveranimation3 {
   0% {
-    transform: translate(120px, 63px);
+    transform: translate(1px, 1px) rotate(5deg);
   }
   50% {
-    transform: translate(120px, 73px);
+    transform: translate(1px, 6px) rotate(5deg);
   }
   100% {
-    transform: translate(120px, 63px);
+    transform: translate(1px, 1px) rotate(5deg);
   }
 }
 
-@keyframes hoveranimation6 {
+@keyframes hoveranimation4 {
   0% {
-    transform: translate(5px, 50px);
+    transform: translate(1px, 20px) rotate(10deg);
   }
   50% {
-    transform: translate(5px, 60px);
+    transform: translate(1px, 29px) rotate(10deg);
   }
   100% {
-    transform: translate(5px, 50px);
+    transform: translate(1px, 20px) rotate(10deg);
   }
 }
 
